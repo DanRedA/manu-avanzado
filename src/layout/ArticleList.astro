@@ -1,0 +1,18 @@
+---
+// layout
+import Main from '@/layout/Main.astro';
+
+// components
+import TagSelector from '@/components/TagSelector.astro';
+
+---
+<Main title='Manu Blog'>
+   <div class="max-w-content-size mx-auto w-full">
+      <TagSelector />
+      <section class="mt-6 w-full">
+         <ul class="space-y-8">
+            <slot />
+         </ul>
+      </section>
+   </div>
+</Main>
